@@ -13,7 +13,7 @@ const RemoveFromFavourite = (movie: Props) => {
     }
     return (
         <>
-            <button onClick={removeFromFavourites}>Remove from favourites</button>
+            <button style={{ color: "grey", all: "unset" }} onClick={removeFromFavourites}>Remove from favourites</button>
         </>
     )
 }
