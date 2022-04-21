@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Redirect, Route } from 'react-router-dom';
 import MoviesComing from './MoviesList/MoviesComing';
 import TopRatedIndian from './MoviesList/TopRatedIndian';
-import Home from './globals/Home';
-// import MovieDetails from './MoviesList/MovieDetails';
 import MoviesInTheaters from './MoviesList/MoviesInTheatres';
 import Favourites from './MoviesList/Favourites';
 import TopRatedMovies from './MoviesList/TopRatedMovies';

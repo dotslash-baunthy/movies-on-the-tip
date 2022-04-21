@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
-import './Navigation.css';
-
 const Navigation = () => {
     return (
         <Container>

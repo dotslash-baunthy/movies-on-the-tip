@@ -40,43 +40,41 @@ const FavouritesDetails = (props: RouteComponentProps<{ id: string }>) => {
 
             el = (
                 <>
-                    <Row>
-                        <Col xs={12} className="my-2">
+
+                    <div className="d-flex">
+                        <img src={`${posterurl}`}
+                            alt={title}
+                        />
+                        <div>
                             <h1>{title} ({year})</h1>
-                        </Col>
-                        <Col xs={12} lg={4} className="my-2">
-                            <img src={`${posterurl}`}
-                                alt={title}
-                                className="w-100"
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xs={12} className="my-2">
-                            Imdb Rating {imdbRating}
-                        </Col>
-                        <Col xs={12} className="my-2">
-                            Content Rating {contentRating}
-                        </Col>
-                        <Col xs={12} className="my-2">
-                            Average Rating {averageRating}
-                        </Col>
-                        <Col xs={12} className="my-2">
-                            Duration {duration}
-                        </Col>
-                        <Col xs={12} className="my-2">
-                            Genres {genres}
-                        </Col>
-                        <Col xs={12} className="my-2">
-                            Actors {actors}
-                        </Col>
-                        <Col xs={12} className="my-2">
-                            Release date {releaseDate}
-                        </Col>
-                        <Col xs={12} className="my-2">
-                            Story line {storyline}
-                        </Col>
-                    </Row>
+                            <Row>
+                                <Col xs={12} className="my-2">
+                                    Imdb Rating {imdbRating}
+                                </Col>
+                                <Col xs={12} className="my-2">
+                                    Content Rating {contentRating}
+                                </Col>
+                                <Col xs={12} className="my-2">
+                                    Average Rating {averageRating}
+                                </Col>
+                                <Col xs={12} className="my-2">
+                                    Duration {duration}
+                                </Col>
+                                <Col xs={12} className="my-2">
+                                    Genres {genres}
+                                </Col>
+                                <Col xs={12} className="my-2">
+                                    Actors {actors}
+                                </Col>
+                                <Col xs={12} className="my-2">
+                                    Release date {releaseDate}
+                                </Col>
+                                <Col xs={12} className="my-2">
+                                    Story line {storyline}
+                                </Col>
+                            </Row>
+                        </div>
+                    </div>
                 </>
             )
             break;

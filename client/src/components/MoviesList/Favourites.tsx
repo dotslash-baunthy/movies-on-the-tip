@@ -3,8 +3,8 @@ import { LoadingStatus } from '../../models/Utils';
 import IMovie from '../../models/IMovie';
 import LoadingIndicator from '../common/LoadingIndicator';
 import { Alert, Col, Row } from 'react-bootstrap';
-import MovieListItem from './MovieListItem';
 import { getFavourites } from '../../services/Favourites';
+import FavouritesMovieListItem from './FavouritesMoveListItem';
 
 type Props = {
 
@@ -43,7 +43,7 @@ class Favourites extends Component<Props, State> {
                             movies?.map(
                                 movie => (
                                     <Col key={movie.id} className="d-flex align-items-stretch my-3">
-                                        <MovieListItem movie={movie} uri={'/favourite/'} />
+                                        <FavouritesMovieListItem movie={movie} uri={'/favourite/'} />
                                     </Col>
                                 )
                             )
