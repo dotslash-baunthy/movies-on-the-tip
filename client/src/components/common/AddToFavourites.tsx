@@ -9,12 +9,11 @@ const Favourite = (movie: Props) => {
 
     function addToFavourites() {
         AddToFavourites(movie);
-        // <AddToFavourites id={""} title={""} year={""} genres={[]} ratings={[]} poster={""} contentRating={""} duration={""} releaseDate={""} averageRating={0} originalTitle={""} storyline={""} actors={[]} imdbRating={0} posterurl={""}/>
     }
     return (
         <div>
             <FontAwesomeIcon icon={faHeart} style={{ color: "red" }} />
-            <button style={{ all: "unset" }} onClick={addToFavourites}>Add to favourites</button>
+            <button style={{ cursor: "pointer", all: "unset" }} onClick={addToFavourites}>Add to favourites</button>
         </div>
     )
 }

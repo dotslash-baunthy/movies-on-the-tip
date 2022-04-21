@@ -11,10 +11,10 @@ const RemoveFromFavourites = async (movie: IMovie) => {
         .then(async () => {
             const response = await axios.delete(`${baseUrl}/favourite/${movie.id}`);
             if (response.status === 204) {
-                message = "Ho gaya";
+                message = "Movie removed from favourites";
             }
             else {
-                message = "Failed to delete from favourites";
+                message = "Failed to remove from favourites";
             }
         })
         .catch(async () => {

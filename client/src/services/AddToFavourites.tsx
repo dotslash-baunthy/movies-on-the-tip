@@ -13,7 +13,7 @@ const AddToFavourites = async (movie: IMovie) => {
         .catch(async () => {
             const response = await axios.post(`${baseUrl}/favourite`, movie);
             if (response.status === 201) {
-                message = "Ho gaya";
+                message = "Movie added to favourites";
             }
             else {
                 message = "Failed to add to favourites";
