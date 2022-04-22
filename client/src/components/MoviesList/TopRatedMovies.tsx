@@ -42,7 +42,7 @@ class TopRatedMovies extends Component<Props, State> {
                         {
                             movies?.map(
                                 movie => (
-                                    <Col key={movie.id} className="d-flex align-items-stretch my-3">
+                                    <Col key={movie.id} className="d-flex align-items-stretch m-3">
                                         <MovieListItem movie={movie} uri={'/top-rated-movies/'} />
                                     </Col>
                                 )
