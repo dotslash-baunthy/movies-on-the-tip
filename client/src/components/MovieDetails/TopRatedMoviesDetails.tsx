@@ -6,7 +6,7 @@ import LoadingIndicator from "../common/LoadingIndicator";
 
 import IMovie from "../../models/IMovie";
 import { LoadingStatus } from "../../models/Utils";
-import { getUpcomingMovieById } from "../../services/SingleMovie";
+import { getTopRatedById } from "../../services/SingleMovie";
 
 const TopRatedMoviesDetails = (props: RouteComponentProps<{ id: string }>) => {
     const [status, setStatus] = useState<LoadingStatus>("LOADING")
@@ -18,7 +18,7 @@ const TopRatedMoviesDetails = (props: RouteComponentProps<{ id: string }>) => {
     useEffect(() => {
         const fetchMovie = async () => {
             try {
-                const data = await getUpcomingMovieById(props.match.params.id)
+                const data = await getTopRatedById(props.match.params.id)
                 setMovie(data)
                 setStatus("LOADED")
             }
