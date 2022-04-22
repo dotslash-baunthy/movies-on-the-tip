@@ -13,7 +13,7 @@ const FavouritesMovieListItem = ({ movie, uri }: Props) => {
     const { id, title, year, genres, ratings, poster, contentRating, duration, releaseDate, averageRating, originalTitle, storyline, actors, imdbRating, posterurl } = movie;
     return (
         <Card>
-            <Link to={`${uri}${id}`} style={{ textDecoration: "none", color: "black" }}>
+            <Link to={`${uri}${id}`} style={{ cursor: "default", textDecoration: "none", color: "black" }}>
                 <Card.Img variant="top" src={posterurl} />
                 <Card.Body>
                     <Card.Title className="d-flex justify-content-start" >
