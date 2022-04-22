@@ -13,6 +13,8 @@ const MoviesInTheatresDetails = (props: RouteComponentProps<{ id: string }>) => 
     const [movie, setMovie] = useState<IMovie | null>(null)
     const [error, setError] = useState<Error | null>(null)
 
+    const baseUrl = process.env.REACT_APP_API_BASE_URL;
+
     useEffect(() => {
         const fetchMovie = async () => {
             try {
@@ -41,36 +43,48 @@ const MoviesInTheatresDetails = (props: RouteComponentProps<{ id: string }>) => 
             el = (
                 <>
 
-                    <div className="d-flex">
-                        <img src={`${posterurl}`}
+                    <div className="d-flex m-2">
+                        <img src={`${baseUrl}/images/${poster}`}
                             alt={title}
                         />
-                        <div>
+                        <div className="m-2">
                             <h1>{title} ({year})</h1>
                             <Row>
                                 <Col xs={12} className="my-2">
-                                    Imdb Rating {imdbRating}
+                                    <span style={{ fontWeight: "bold" }}>Imdb Rating - </span>{imdbRating}
                                 </Col>
                                 <Col xs={12} className="my-2">
-                                    Content Rating {contentRating}
+                                    <span style={{ fontWeight: "bold" }}>Content Rating - </span>{contentRating}
                                 </Col>
                                 <Col xs={12} className="my-2">
-                                    Average Rating {averageRating}
+                                    <span style={{ fontWeight: "bold" }}>Average Rating - </span>{averageRating}
                                 </Col>
                                 <Col xs={12} className="my-2">
-                                    Duration {duration}
+                                    <span style={{ fontWeight: "bold" }}>Duration - </span>{duration}
                                 </Col>
                                 <Col xs={12} className="my-2">
-                                    Genres {genres}
+                                    <span style={{ fontWeight: "bold" }}>Genres - </span>{
+                                        genres.map(
+                                            genre => (
+                                                genre + ', '
+                                            )
+                                        )
+                                    }
                                 </Col>
                                 <Col xs={12} className="my-2">
-                                    Actors {actors}
+                                    <span style={{ fontWeight: "bold" }}>Actors - </span>{
+                                        actors.map(
+                                            actor => (
+                                                actor + ', '
+                                            )
+                                        )
+                                    }
                                 </Col>
                                 <Col xs={12} className="my-2">
-                                    Release date {releaseDate}
+                                    <span style={{ fontWeight: "bold" }}>Release date - </span> {releaseDate}
                                 </Col>
                                 <Col xs={12} className="my-2">
-                                    Story line {storyline}
+                                    <span style={{ fontWeight: "bold" }}>Story line - </span>{storyline}
                                 </Col>
                             </Row>
                         </div>

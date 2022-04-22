@@ -9,12 +9,14 @@ type Props = {
     uri: string
 }
 
+const baseUrl = process.env.REACT_APP_API_BASE_URL;
+
 const FavouritesMovieListItem = ({ movie, uri }: Props) => {
     const { id, title, year, genres, ratings, poster, contentRating, duration, releaseDate, averageRating, originalTitle, storyline, actors, imdbRating, posterurl } = movie;
     return (
         <Card>
-            <Link to={`${uri}${id}`} style={{ textDecoration: "none", color: "black" }}>
-                <Card.Img variant="top" src={posterurl} />
+            <Link to={`${uri}${id}`} style={{ cursor: "default", textDecoration: "none", color: "black" }}>
+                <Card.Img variant="top" src={`${baseUrl}/images/${poster}`} />
                 <Card.Body>
                     <Card.Title className="d-flex justify-content-start" >
                         {title}
