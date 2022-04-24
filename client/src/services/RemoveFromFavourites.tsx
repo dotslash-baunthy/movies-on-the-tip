@@ -27,7 +27,7 @@ const RemoveFromFavourites = async (movie: IMovie) => {
         })
 
     return (
-        <MyToasts message={message} error={false} />
+        <MyToasts message={message} error={error} />
     )
 };
 
