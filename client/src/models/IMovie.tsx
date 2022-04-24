@@ -1,3 +1,6 @@
+// This file lists structures of objects
+// For this assignment, we have only one
+
 interface IMovie {
   id: string;
   title: string;

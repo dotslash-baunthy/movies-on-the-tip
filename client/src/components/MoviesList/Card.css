@@ -1,8 +1,10 @@
+/* CSS file to add zoom-on-hover effect */
+
 .card {
-    transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(1.1);
-    overflow: hidden;
+  transform: scale(1.1);
+  overflow: hidden;
 }

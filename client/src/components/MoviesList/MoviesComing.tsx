@@ -1,3 +1,6 @@
+// List all upcoming movies
+// Server exposed /movies-coming endpoint
+
 import React, { Component } from 'react'
 import { LoadingStatus } from '../../models/Utils';
 import IMovie from '../../models/IMovie';

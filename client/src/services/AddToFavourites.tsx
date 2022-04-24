@@ -1,3 +1,6 @@
+// Service file to add a movie to favourites
+// This makes a post request to the running server
+
 import axios from "axios";
 import { MyToasts } from "../components/common/MyToasts";
 import IMovie from "../models/IMovie";

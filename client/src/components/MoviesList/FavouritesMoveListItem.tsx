@@ -1,3 +1,6 @@
+// Dictates how to show a single favourite
+// This differs from MovieListItem for all other types in the sense that it includes the ability to 'remove a movie from Favourites'
+
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import IMovie from "../../models/IMovie";

@@ -1,3 +1,5 @@
+// Navbar component on movies app client
+
 import { NavLink } from "react-router-dom";
 import { Container, Navbar, Nav } from "react-bootstrap";
 

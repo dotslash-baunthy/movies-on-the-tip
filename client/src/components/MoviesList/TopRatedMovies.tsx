@@ -1,3 +1,6 @@
+// List all top rated movies
+// Server exposed /top-rated-movies endpoint
+
 import React, { Component } from 'react'
 import { LoadingStatus } from '../../models/Utils';
 import IMovie from '../../models/IMovie';

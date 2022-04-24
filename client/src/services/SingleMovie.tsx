@@ -1,3 +1,5 @@
+// Service file that contains multiple functions (make many GET requests) to get a single movie
+
 import axios from "axios";
 
 const baseUrl = process.env.REACT_APP_API_BASE_URL;

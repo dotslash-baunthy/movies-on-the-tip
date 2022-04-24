@@ -1,3 +1,6 @@
+// Add button to add to favourites
+// Call removeFromFavourites function on click
+
 import IMovie from "../../models/IMovie";
 import { RemoveFromFavourites } from "../../services/RemoveFromFavourites";
 

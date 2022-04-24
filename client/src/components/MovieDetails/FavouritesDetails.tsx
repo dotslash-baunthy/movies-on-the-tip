@@ -1,3 +1,6 @@
+// List a single favourites
+// Server exposed /favourite:id endpoint
+
 import { useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router";
 import { Alert, Col, Row } from "react-bootstrap";

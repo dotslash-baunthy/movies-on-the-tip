@@ -1,3 +1,6 @@
+// Add button to add to favourites
+// Call addToFavourites function on click
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IMovie from "../../models/IMovie";
 import { AddToFavourites } from "../../services/AddToFavourites";

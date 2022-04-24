@@ -1,3 +1,6 @@
+// List all movies in theatres
+// Server exposed /movies-in-theatres endpoint
+
 import React, { Component } from 'react'
 import { LoadingStatus } from '../../models/Utils';
 import IMovie from '../../models/IMovie';

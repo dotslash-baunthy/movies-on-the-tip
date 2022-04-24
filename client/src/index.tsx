@@ -1,3 +1,5 @@
+// Component which will be replaced in id=root in our HTML page
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';

@@ -1,4 +1,4 @@
-import React from 'react';
+// Temp indicator (spinner) in case loading takes long
 import { Spinner } from 'react-bootstrap';
 
 type Props = {

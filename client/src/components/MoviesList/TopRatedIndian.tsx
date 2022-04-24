@@ -1,3 +1,6 @@
+// List all top rated Indian movies
+// Server exposed /top-rated-india endpoint
+
 import React, { Component } from 'react'
 import { LoadingStatus } from '../../models/Utils';
 import IMovie from '../../models/IMovie';

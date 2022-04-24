@@ -1,5 +1,6 @@
+// Service file to remove a movie from favourites
+
 import axios from "axios";
-import React from "react";
 import { MyToasts } from "../components/common/MyToasts";
 import IMovie from "../models/IMovie";
 

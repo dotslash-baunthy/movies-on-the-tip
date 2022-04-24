@@ -1,3 +1,6 @@
+// List a single upcoming movie
+// Server exposed /movies-coming:id endpoint
+
 import { useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router";
 import { Alert, Col, Row } from "react-bootstrap";

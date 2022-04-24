@@ -1,3 +1,6 @@
+// List a single top rated movie
+// Server exposed /top-rated-movies:id endpoint
+
 import { useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router";
 import { Alert, Col, Row } from "react-bootstrap";

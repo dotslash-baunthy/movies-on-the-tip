@@ -1,3 +1,6 @@
+// Culmination of all components
+// This is finally called in index.tsx
+
 import React from 'react';
 import Navigation from './globals/Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';

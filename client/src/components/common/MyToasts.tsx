@@ -1,3 +1,6 @@
+// This component is supposed to render when adding a favourite or removing a favourite
+// Not being rendered
+
 import 'bootstrap/dist/css/bootstrap.css'
 import { ToastContainer, Toast } from "react-bootstrap";
 

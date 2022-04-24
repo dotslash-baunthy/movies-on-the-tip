@@ -1,3 +1,6 @@
+// List all favourites
+// Server exposed /favourite endpoint
+
 import React, { Component } from 'react'
 import { LoadingStatus } from '../../models/Utils';
 import IMovie from '../../models/IMovie';
